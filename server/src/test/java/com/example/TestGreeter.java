@@ -1,33 +1,26 @@
-package com.example;
+package com.training.example.JacocoExample;
+public class Palindrome
+{
 
-import org.junit.Before;
-import org.junit.Test;
+// Function that returns true if the word is found
+	static boolean isWordPresent(String sentence, String word)
+	{
+	// To break the sentence in words
+		String []s = sentence.split(" ");
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.greaterThan;
-import static org.junit.Assert.assertThat;
-import static org.junit.matchers.JUnitMatchers.containsString;
+	// To temporarily store each individual word
+			for ( String temp :s)
+		{
 
-public class TestGreeter {
-
-  private Greeter greeter;
-
-  @Before
-  public void setup() {
-    greeter = new Greeter();
-  }
-
-  @Test
-  public void greetShouldIncludeTheOneBeingGreeted() {
-    String someone = "World";
-
-    assertThat(greeter.greet(someone), containsString(someone));
-  }
-
-  @Test
-  public void greetShouldIncludeGreetingPhrase() {
-    String someone = "World";
-
-    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
-  }
+		// Comparing the current word
+		// with the word to be searched
+			if (temp.compareTo(word) == 0)
+			{
+				System.out.println(word);
+				return true;
+			}
+		}
+				return false;
+	}
+		
 }
