@@ -1,5 +1,5 @@
-package com.training.example.JacocoExample;
-public class Greeter
+package com.example;
+public class TestGreeter
 {
 
 // Function that returns true if the word is found
