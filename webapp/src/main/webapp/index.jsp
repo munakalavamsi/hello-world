@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>New register form Amret</h1>
+    <h1>Hello world</h1>
    
   </div>
 
