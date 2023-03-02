@@ -1,4 +1,4 @@
-package com.training.example.JacocoExample;
+package com.example;
 public class Greeter
 {
 
