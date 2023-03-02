@@ -1,19 +1,26 @@
-package com.example;
+package com.training.example.JacocoExample;
+public class Palindrome
+{
 
-/**
- * This is a class.
- */
-public class Greeter {
+// Function that returns true if the word is found
+	static boolean isWordPresent(String sentence, String word)
+	{
+	// To break the sentence in words
+		String []s = sentence.split(" ");
 
-  /**
-   * This is a constructor.
-   */
-  public Greeter() {
+	// To temporarily store each individual word
+			for ( String temp :s)
+		{
 
-  }
-
-  //TODO: Add javadoc comment
-  public String greet(String someone) {
-    return String.format("Hello, %s!", someone);
-  }
+		// Comparing the current word
+		// with the word to be searched
+			if (temp.compareTo(word) == 0)
+			{
+				System.out.println(word);
+				return true;
+			}
+		}
+				return false;
+	}
+		
 }
