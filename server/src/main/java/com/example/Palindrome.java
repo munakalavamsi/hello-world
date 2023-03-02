@@ -1,5 +1,5 @@
 package com.example;
-public class Greeter
+public class Palindrome
 {
 
 // Function that returns true if the word is found
