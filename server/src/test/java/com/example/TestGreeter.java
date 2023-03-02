@@ -1,5 +1,5 @@
 package com.training.example.JacocoExample;
-public class Palindrome
+public class Greeter
 {
 
 // Function that returns true if the word is found
