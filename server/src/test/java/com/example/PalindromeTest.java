@@ -1,4 +1,5 @@
 
+
 package com.example;
 
 import static org.junit.Assert.*;
@@ -20,4 +21,16 @@ public void checkstr()
 	
 
 }
+   @Test
+    public void testWordInEmptyString() {
+        String sentence = "";
+        assertFalse(sentence.contains("hello"));
+    }
+    /* Corner case Test 1 - Empty */
+
+    @Test
+    public void testWordInStringCaseInsensitive() {
+        String sentence = "hello world";
+        assertTrue(sentence.toLowerCase().contains("hello"));
+    }
 }
